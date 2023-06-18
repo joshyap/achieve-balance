@@ -33,7 +33,7 @@ html {
     --main-font-color: #000;
     --alternate-font-color: #fff; */
 
-    --main-bg-color: #9da2ea;
+    --main-bg-color: rgb(112, 112, 247);
     --alternate-bg-color: #ffffff;
     --main-font-color: #000;
     --alternate-font-color: #fff;
@@ -52,6 +52,7 @@ body {
 
 .slide:nth-child(odd) {
     background-color: var(--main-bg-color);
+    color: var(--alternate-font-color);
 }
 
 .slide:nth-child(even) {
@@ -184,6 +185,10 @@ nav ul li a, nav a {
     justify-content: center;
     text-align: center;
     /* flex-direction: column; */
+}
+
+.individual-service img {
+    filter: brightness(0) invert(1);
 }
 
 .center-text {
