@@ -1,0 +1,277 @@
+/* CSS RESET */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+/* CSS RESET */
+
+/* CSS VARIABLES */
+:root {
+    /* --main-bg-color: #f7f8fe;
+    --alternate-bg-color: #ffffff;
+    --main-font-color: #000;
+    --alternate-font-color: #fff; */
+
+    --main-bg-color: #9da2ea;
+    --alternate-bg-color: #ffffff;
+    --main-font-color: #000;
+    --alternate-font-color: #fff;
+}
+/* CSS VARIABLES */
+
+body {
+    overflow-x: hidden;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.slide:nth-child(odd) {
+    background-color: var(--main-bg-color);
+}
+
+.slide:nth-child(even) {
+    background-color: var(--alternate-bg-color);
+}
+
+/* HERO SECTION */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imgs/balancing-rocks-2.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    padding-right: 20vw;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 14px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li a, nav a {
+    text-decoration: none;
+    padding: 0 6px;
+    color: #fff;
+}
+/* HERO SECTION */
+
+/* ABOUT SECTION */
+#about > h1 {
+    padding: 15px 0;
+}
+
+.about-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    /* height: 100vh; */
+}
+
+.about-profiles img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.about-profiles {
+    width: 100%;
+    height: 100%;
+    padding: 0 17vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2vh 0;
+}
+
+.last-about-profile {
+    padding-bottom: 5vh;
+}
+
+.profile-picture {
+    text-align: center;
+}
+
+.profile-picture img {
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.profile-text {
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 1em;
+}
+
+/* ABOUT SECTION */
+
+/* SERVICES SECTION */
+.services-header {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.services-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.individual-service {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* flex-direction: column; */
+}
+
+.center-text {
+    text-align: center;
+    padding: 30px 30px;
+    font-size: 1.5em;
+}
+
+/* .services-content > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.services-content img {
+    max-width: 17vw;
+}
+/* SERVICES SECTION */
+
+/* CONTACT SECTION */
+.contact-header {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-details {
+    padding-top: 25px;
+    text-align: center;
+}
+/* CONTACT SECTION */
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 800px) {
+    .hero-content {        
+        width: 80%;
+        padding: unset;
+    }
+
+
+
+    .about-content-container {
+        height: unset;
+    }
+    
+    .about-profiles {        
+        padding: 0 3vw;
+    }
+
+    .about-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 3vh 0;
+    }
+
+    .profile-picture {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+
+    .profile-text {        
+        padding: 0 14px;
+    }
+
+
+
+    .services-content {
+        flex-direction: column;
+    }
+
+    #services {
+        height: unset;
+    }
+
+  }
