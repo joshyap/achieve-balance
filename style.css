@@ -181,6 +181,10 @@ nav ul li a, nav a {
     width: 100%;
 }
 
+.services-content > div {
+    flex: 1 1 0;
+}
+
 .individual-service {
     display: flex;
     justify-content: center;
