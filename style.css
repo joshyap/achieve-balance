@@ -315,8 +315,10 @@ nav ul li a, nav a {
         width: 80%;
         padding: unset;
     }
-
-
+    
+    nav ul {
+        display: none;
+    }
 
     .about-content-container {
         height: unset;
@@ -338,13 +340,12 @@ nav ul li a, nav a {
         display: flex;
         flex-direction: column;
         padding-bottom: 15px;
+        align-items: center;
     }
 
     .profile-text {        
         padding: 0 14px;
     }
-
-
 
     .services-content {
         flex-direction: column;
@@ -352,6 +353,10 @@ nav ul li a, nav a {
 
     #services {
         height: unset;
+    }
+
+    .expertise {        
+        padding: unset;
     }
 
   }
