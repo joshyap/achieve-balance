@@ -106,6 +106,10 @@ nav ul li a, nav a {
     padding: 0 6px;
     color: #fff;
 }
+
+nav h1 {
+    font-size: 2em;
+}
 /* HERO SECTION */
 
 /* ABOUT SECTION */
