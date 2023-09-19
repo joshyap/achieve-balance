@@ -96,6 +96,21 @@ nav {
     padding-top: 14px;
 }
 
+nav img {
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
+    filter: brightness(0) invert(1);
+}
+
+.logo {
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
+}
+
 nav ul {
     display: flex;
     flex-direction: row;
@@ -117,6 +132,7 @@ nav h1 {
     padding: 15px 0;
 }
 
+
 .about-content-container {
     display: flex;
     justify-content: center;
@@ -124,6 +140,7 @@ nav h1 {
     flex-direction: column;
     width: 100vw;
     /* height: 100vh; */
+    padding-top: 5vh;
 }
 
 .about-profiles img {
@@ -138,6 +155,7 @@ nav h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-top: 3vh;
 }
 
 .about-profile {
@@ -166,6 +184,10 @@ nav h1 {
     padding-top: 12px;
     padding-bottom: 12px;
     font-size: 1em;
+}
+
+.profile-text h3 {
+    text-align: center;
 }
 
 /* ABOUT SECTION */
@@ -244,7 +266,9 @@ nav h1 {
 /* CONTACT SECTION */
 .contact-header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 25px 0;
 }
 
